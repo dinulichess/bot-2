@@ -1,4 +1,4 @@
-token: "lip_LxOdszffnb7u1m35raeW"    # Lichess OAuth2 Token.
+token: "lip_qQmzz0654mfSINsvJp4e"    # Lichess OAuth2 Token.
 url: "https://lichess.org/"  # Lichess base URL.
 
 engine:                      # Engine settings.
@@ -9,7 +9,7 @@ engine:                      # Engine settings.
   protocol: "uci"            # "uci" or "xboard"
   ponder: true               # Think on opponent's time.
   polyglot:
-    enabled: true           # Activate polyglot book.
+    enabled: false           # Activate polyglot book.
     book:
       standard:              # List of book file paths for variant standard.
         - Goi5.1.bin
@@ -83,19 +83,20 @@ challenge:                   # incoming challenges
   accept_bot: true          # accepts challenges coming from other bots
   only_bot: false            # accept challenges by bots only
   max_increment: 180         # maximum amount of increment to accaept a challenge. the max is 180. set to 0 for no increment
-  min_increment: 0           # minimum amount of increment to accept a challenge
+  min_increment: 1           # minimum amount of increment to accept a challenge
   variants:                  # chess variants to accept (http://lichess.org/variant)
     - standard
 #   - fromPosition
-    - antichess
-    - atomic
+#   - antichess
+#   - atomic
     - chess960
-    - crazyhouse
-    - horde
+#   - crazyhouse
+#   - horde
     - kingOfTheHill
-    - racingKings
-    - threeCheck
+#   - racingKings
+#   - threeCheck
   time_controls:             # time controls to accept
+    - ultrabullet 
     - bullet
     - blitz
     - rapid
